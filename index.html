@@ -9,16 +9,16 @@
 <h1>Угадай число!</h1>
 <button class="start-game-button">Начать новую игру</button>
 <script type="module" src="./scripts/index.js"></script>
-<form class="form">
-    <label class="range-label" for="range">Угадайте число в диапазоне 1-</label>
-    <select name="range" id="range">
-        <option value="100">100</option>
-        <option value="1000">1000</option>
-    </select>
-</form>
+<div class="range-select">
+    <span>Угадайте число в диапазоне от 1 до</span>
+    <div class="end-range active">100</div>
+    или
+    <div class="end-range">1000</div>
+</div>
 <div class="guess">
     <input class="guess-input" type="text"/>
     <button class="guess-button">Угадать</button>
+    <p class="clue"></p>
 </div>
 <div class="result">
     <p class="result-text"></p>

@@ -31,9 +31,23 @@ h1 {
     cursor: pointer;
 }
 
-.range-label {
+.range-select {
     font-family: "Roboto Medium", sans-serif;
     font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.end-range {
+    border: 1px solid #778699;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.active {
+    border: 1px solid red;
 }
 
 #range {
@@ -45,6 +59,7 @@ h1 {
     display: flex;
     gap: 10px;
     align-items: center;
+    position: relative;
 }
 
 .guess-input {
@@ -70,4 +85,17 @@ h1 {
 .result-text {
     color: #7B788E;
     font-size: 25px;
+}
+
+.guesses-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.clue {
+    position: absolute;
+    bottom: -25px;
+    color: red;
 }
