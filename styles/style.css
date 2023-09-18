@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: Roboto, sans-serif;
+    background-color: #D3D3D3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+
+.start-game-button {
+    background-color: #778699;
+    color: #FFFFFF;
+    width: 336px;
+    height: 60px;
+    border-radius: 6px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.range-label {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 25px;
+}
+
+#range {
+    height: 30px;
+    font-size: 23px;
+}
+
+.guess {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.guess-input {
+    width: 190px;
+    height: 56px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 25px;
+    color: #778699;
+}
+
+.guess-button {
+    background-color: #4F779D;
+    color: #FFFFFF;
+    border: none;
+    width: 79px;
+    height: 46px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.result-text {
+    color: #7B788E;
+    font-size: 25px;
+}

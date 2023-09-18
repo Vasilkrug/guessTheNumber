@@ -6,6 +6,26 @@
     <title>Guess The Number</title>
 </head>
 <body>
+<h1>Угадай число!</h1>
+<button class="start-game-button">Начать новую игру</button>
 <script type="module" src="./scripts/index.js"></script>
+<form class="form">
+    <label class="range-label" for="range">Угадайте число в диапазоне 1-</label>
+    <select name="range" id="range">
+        <option value="100">100</option>
+        <option value="1000">1000</option>
+    </select>
+</form>
+<div class="guess">
+    <input class="guess-input" type="text"/>
+    <button class="guess-button">Угадать</button>
+</div>
+<div class="result">
+    <p class="result-text"></p>
+</div>
+<div class="recorder-guesses">
+    <h3>История Ваших попыток:</h3>
+    <ul class="guesses-list"></ul>
+</div>
 </body>
 </html>
